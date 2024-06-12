@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/cms.css">
     <script type="module" src="../js/main_usuario.js" defer></script>
-    <link rel="shortcut icon" href="../../img/PetShoppin 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/PetShoppin 1.png" type="image/x-icon">
     <title>CMS</title>
 </head>
 
 <body>
     <header>
-        <img src="../../img/PetShoppin 1.png" alt="">
+        <img src="../img/PetShoppin 1.png" alt="">
     </header>
     <main>
         <table class="table">
@@ -58,18 +58,18 @@
                                 <label for="telefone" class="form-label">Telefone</label>
                                 <input type="text" class="form-control" id="telefone" name="telefone" placeholder="URL da telefone do usuario">
                             </div>
-                            
+
                             <div class="mb-3">
                                 <label for="sexo" class="form-label">Sexo</label>
                                 <select class="form-select" id="sexo" name="id_sexo">
                                     <!-- Opções serão preenchidas dinamicamente -->
                                 </select>
                             </div>
-                            
+
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                <button type="submit" id="btnSalvar" class="btn btn-primary"  style="background-color: #F30000; border: none;">Salvar</button>
+                                <button type="submit" id="btnSalvar" class="btn btn-primary" style="background-color: #F30000; border: none;">Salvar</button>
                             </div>
                         </form>
                     </div>
@@ -78,48 +78,48 @@
         </div>
 
         <!-- Modal de edição de usuario -->
-<div class="modal fade" id="modalEdicaoUsuario" tabindex="-1" aria-labelledby="modalEdicaoUsuarioLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalEdicaoUsuarioLabel">Editar usuario</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="formEditarUsuario">
-                    <input type="hidden" id="usuarioId" name="id">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome do usuario</label>
-                        <input type="text" class="form-control" id="nomEditar" name="nome" placeholder="Nome do usuario">
+        <div class="modal fade" id="modalEdicaoUsuario" tabindex="-1" aria-labelledby="modalEdicaoUsuarioLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalEdicaoUsuarioLabel">Editar usuario</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email do usuario</label>
-                        <input type="text" class="form-control" id="emailEditar" name="email" placeholder="Email do usuario">
-                    </div>
-                    <div class="mb-3">
-                        <label for="senha" class="form-label">Senha</label>
-                        <input type="text" class="form-control" id="senhaEditar" name="senha">
-                    </div>
-                    <div class="mb-3">
-                        <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="telefoneEditar" name="telefone" placeholder="telefone do usuario">
-                    </div>
-                    <div class="mb-3">
-                        <label for="sexo" class="form-label">Sexo</label>
-                        <select class="form-select" id="sexoEditar" name="id_sexo">
+                    <div class="modal-body">
+                        <form id="formEditarUsuario">
+                            <input type="hidden" id="usuarioId" name="id">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome do usuario</label>
+                                <input type="text" class="form-control" id="nomEditar" name="nome" placeholder="Nome do usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email do usuario</label>
+                                <input type="text" class="form-control" id="emailEditar" name="email" placeholder="Email do usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Senha</label>
+                                <input type="text" class="form-control" id="senhaEditar" name="senha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="telefoneEditar" name="telefone" placeholder="telefone do usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sexo" class="form-label">Sexo</label>
+                                <select class="form-select" id="sexoEditar" name="id_sexo">
                             <!-- Opções serão preenchidas dinamicamente -->
                         </select>
-                    </div>
+                            </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="submit" id="btnAtualizar" class="btn btn-primary" style="background-color: #F30000; border: none;">Atualizar</button>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" id="btnAtualizar" class="btn btn-primary" style="background-color: #F30000; border: none;">Atualizar</button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
 
         <!-- Modal de confirmação de exclusão -->
@@ -143,7 +143,7 @@
 
     </main>
     <footer>
-        
+
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #F30000; border: none;">
             Inserir novo usuario
         </button>

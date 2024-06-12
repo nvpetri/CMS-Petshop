@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/cms.css">
     <script type="module" src="../js/main_categoria.js" defer></script>
-    <link rel="shortcut icon" href="../../img/PetShoppin 1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/PetShoppin 1.png" type="image/x-icon">
     <title>CMS</title>
 </head>
 
 <body>
     <header>
-        <img src="../../img/PetShoppin 1.png" alt="categorias">
+        <img src="../img/PetShoppin 1.png" alt="categorias">
     </header>
     <main>
         <table class="table">
@@ -47,10 +47,10 @@
                             <div class="mb-3">
                                 <label for="descricao" class="form-label">Descrição</label>
                                 <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
-                            </div>                            
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                <button type="submit" id="btnSalvar" class="btn btn-primary"  style="background-color: #F30000; border: none;">Salvar</button>
+                                <button type="submit" id="btnSalvar" class="btn btn-primary" style="background-color: #F30000; border: none;">Salvar</button>
                             </div>
                         </form>
                     </div>
@@ -59,33 +59,33 @@
         </div>
 
         <!-- Modal de edição de categoria -->
-<div class="modal fade" id="modalEdicaoCategoria" tabindex="-1" aria-labelledby="modalEdicaoCategoriaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalEdicaoCategoriaLabel">Editar categoria</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="formEditarCategoria">
-                    <input type="hidden" id="categoriaId" name="id">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome do categoria</label>
-                        <input type="text" class="form-control" id="nomeEditar" name="nome" placeholder="Título do categoria">
+        <div class="modal fade" id="modalEdicaoCategoria" tabindex="-1" aria-labelledby="modalEdicaoCategoriaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalEdicaoCategoriaLabel">Editar categoria</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="mb-3">
-                        <label for="descricao" class="form-label">Descrição</label>
-                        <textarea class="form-control" id="descricaoEditar" name="descricao" rows="3"></textarea>
+                    <div class="modal-body">
+                        <form id="formEditarCategoria">
+                            <input type="hidden" id="categoriaId" name="id">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome do categoria</label>
+                                <input type="text" class="form-control" id="nomeEditar" name="nome" placeholder="Título do categoria">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descricao" class="form-label">Descrição</label>
+                                <textarea class="form-control" id="descricaoEditar" name="descricao" rows="3"></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                <button type="submit" id="btnAtualizar" class="btn btn-primary" style="background-color: #F30000; border: none;">Atualizar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="submit" id="btnAtualizar" class="btn btn-primary" style="background-color: #F30000; border: none;">Atualizar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
         <div class="modal fade" id="modalConfirmacaoExclusao" tabindex="-1" aria-labelledby="modalConfirmacaoExclusaoLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -107,7 +107,7 @@
 
     </main>
     <footer>
-        
+
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #F30000; border: none;">
             Inserir nova categoria
         </button>

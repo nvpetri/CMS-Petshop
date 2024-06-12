@@ -1,32 +1,31 @@
-html body{
-    background-image: url(../../img/background.png);
+html body {
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header{
+header {
     width: 100vw;
     display: grid;
     place-items: center;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer{
+footer {
     width: 100vw;
     display: grid;
     place-items: center;
 }
 
-button{
+button {
     border-radius: 32px !important;
 }
 
-table{
-
+table {
     width: 90vw !important;
 }
